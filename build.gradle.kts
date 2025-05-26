@@ -1,7 +1,7 @@
 plugins {
     id("java")
-    id("org.springframework.boot") version "2.7.18"
-    id("io.spring.dependency-management") version "1.0.15.RELEASE"
+    id("org.springframework.boot") version "3.0.13"
+    id("io.spring.dependency-management") version "1.1.4"
 }
 
 group = "io.github.inertia4j"
@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.github.inertia4j:inertia4j-spring:1.0.2")
+    implementation("io.github.inertia4j:inertia4j-spring:1.0.4")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.postgresql:postgresql:42.7.2")
