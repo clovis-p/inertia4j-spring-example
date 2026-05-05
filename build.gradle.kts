@@ -23,3 +23,7 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+tasks.bootRun {
+    debugOptions { host = "*" }
+}

@@ -16,13 +16,15 @@ services:
     volumes:
       - gradle_cache:/root/.gradle
       - .:/app
-    command: ./gradlew --no-daemon bootRun
+      - ../inertia4j:/inertia4j
+    command: ./gradlew --no-daemon bootRun --debug-jvm
     environment:
       SPRING_DATASOURCE_URL: 'jdbc:postgresql://postgres:5432/example_db'
     depends_on:
       - postgres
     ports:
       - "8080:8080"
+      - "5005:5005"
 
   vite:
     image: docker.io/node:24-slim
