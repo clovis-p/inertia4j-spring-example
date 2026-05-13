@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.github.inertia4j:inertia4j-spring-boot-3:1.0.4")
+    implementation("io.github.inertia4j:inertia4j-spring:1.0.4")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.postgresql:postgresql:42.7.2")

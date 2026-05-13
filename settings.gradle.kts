@@ -14,6 +14,6 @@ rootProject.name = "inertia4j-spring-example"
 
 includeBuild("../inertia4j") {
     dependencySubstitution {
-        substitute(module("io.github.inertia4j:inertia4j-spring-boot-3")).using(project(":inertia4j.spring-boot-3"))
+        substitute(module("io.github.inertia4j:inertia4j-spring")).using(project(":inertia4j.spring"))
     }
 }
